@@ -1,6 +1,6 @@
 {
   "name": "laravel-passport-mongodb",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "laravel passport mongodb",
   "main": "index.js",
   "scripts": {
@@ -24,11 +24,11 @@
       "tokenRef": "GITHUB_TOKEN"
     },
     "git": {
-        "commitMessage": "chore: release v${version}"
-      },
+      "commitMessage": "chore: release v${version}"
+    },
     "npm": {
-        "publish": false,
-        "skipChecks": false
+      "publish": false,
+      "skipChecks": false
     }
   },
   "devDependencies": {
