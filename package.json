@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "read -p 'GITHUB_TOKEN: ' GITHUB_TOKEN && export GITHUB_TOKEN=$GITHUB_TOKEN && release-it"
+    "release": "dotenv release-it"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,16 @@
   "homepage": "https://github.com/rizkyseptiawan/laravel-passport-mongodb#readme",
   "release-it": {
     "github": {
-      "release": true
+      "release": true,
+      "releaseName": "Release v${version}",
+      "tokenRef": "GITHUB_TOKEN"
+    },
+    "git": {
+        "commitMessage": "chore: release v${version}"
+      },
+    "npm": {
+        "publish": false,
+        "skipChecks": false
     }
   },
   "devDependencies": {
