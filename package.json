@@ -1,0 +1,29 @@
+{
+  "name": "laravel-passport-mongodb",
+  "version": "0.2.0",
+  "description": "laravel passport mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "read -p 'GITHUB_TOKEN: ' GITHUB_TOKEN && export GITHUB_TOKEN=$GITHUB_TOKEN && release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkyseptiawan/laravel-passport-mongodb.git"
+  },
+  "author": "Rizky Septiawan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rizkyseptiawan/laravel-passport-mongodb/issues"
+  },
+  "homepage": "https://github.com/rizkyseptiawan/laravel-passport-mongodb#readme",
+  "release-it": {
+    "github": {
+      "release": true
+    }
+  },
+  "devDependencies": {
+    "dotenv-cli": "^6.0.0",
+    "release-it": "^15.5.0"
+  }
+}
